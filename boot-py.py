@@ -4,11 +4,11 @@ import time
 led = machine.Pin(2,machine.Pin.OUT)
 
 
-for True:
+while True:
     led.value(1)
-    time.sleep(.2)
+    time.sleep_ms(500)
     led.value(0)
-    time.sleep(.1)
+    time.sleep_ms(500)
 
 
 import ugit
